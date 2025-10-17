@@ -1,0 +1,38 @@
+void setup() {
+  pinMode(13, OUTPUT); // pin for red LED output
+  pinMode(12, OUTPUT); // pin for blue LED output
+  pinMode(11, OUTPUT); // pin for greenLED output
+}
+
+void loop() {
+  // get a red RGB
+  digitalWrite(13, 1);  // turn the red LED on (1 is the voltage level)
+  digitalWrite(12, 0);  // turn the blue LED off (0 is the voltage level)
+  digitalWrite(11, 0);  // turn the green LED off (0 is the voltage level)
+  delay(500);                      // wait for a second
+          // get blue RGB
+          digitalWrite(13, 0);   
+          digitalWrite(12, 1);   
+          digitalWrite(11, 0);   
+          delay(500); 
+            // get green RGB                     
+            digitalWrite(13, 0);   
+            digitalWrite(12, 0);   
+            digitalWrite(11, 1);   
+            delay(500); 
+              // get white RGB
+              digitalWrite(13, 1);   
+              digitalWrite(12, 1);   
+              digitalWrite(11, 1);   
+              delay(500);
+                // get green RGB
+                digitalWrite(13, 0);   
+                digitalWrite(12, 0);   
+                digitalWrite(11, 1);  
+                delay(500); 
+                    // get blue RGB
+                    digitalWrite(13, 0);   
+                    digitalWrite(12, 1);   
+                    digitalWrite(11, 0);   
+                    delay(500);                    
+}
