@@ -1,0 +1,24 @@
+void setup() {
+  pinMode(13, OUTPUT); // pin for red LED output
+  pinMode(12, OUTPUT); // pin for yellow LED output
+  pinMode(11, OUTPUT); // pin for blue LED output
+}
+
+void loop() {
+  digitalWrite(13, 1);  // turn the red LED on (1 is the voltage level)
+  digitalWrite(12, 0);  // turn the yellow LED off (0 is the voltage level)
+  digitalWrite(11, 0);  // turn the blue LED off (0 is the voltage level)
+  delay(1000);                      // wait for a second
+          digitalWrite(13, 0);   // turn the red LED off 
+          digitalWrite(12, 1);   // turn the yellow LED on (HIGH is the voltage level)
+          digitalWrite(11, 0);   // turn the blue LED off 
+          delay(1000);                      // wait for a second
+            digitalWrite(13, 0);   // turn the red LED off
+            digitalWrite(12, 0);   // turn the red LED off
+            digitalWrite(11, 1);   // turn the red LED on (1 is the voltage level)
+            delay(1000); 
+              digitalWrite(13, 0);   // turn the red LED off
+              digitalWrite(12, 1);  // turn the yellow LED on (HIGH is the voltage level)
+              digitalWrite(11, 0);   // turn the blue LED off
+              delay(1000);            
+}
