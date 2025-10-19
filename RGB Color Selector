@@ -1,0 +1,19 @@
+int analogValue = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  for (int i = 9; i <=11; i++) { // pin 11 to 13 are OUTPUT 11=red 10=green 9=blue
+  pinMode(i, OUTPUT);
+  }
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  analogValue = analogRead(A0);
+  Serial.println(analogValue);
+  // get a purple light RGB
+  analogWrite(11, 228); // 228/255 of red light
+  analogWrite(10, 60);  // 60/255 of green light
+  analogWrite(9, 168);  // 168/255 of blue light
+}
