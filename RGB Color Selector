@@ -3,7 +3,7 @@ int analogValue = 0;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  for (int i = 9; i <=11; i++) { // pin 11 to 13 are OUTPUT 11=red 10=green 9=blue
+  for (int i = 9; i <=11; i++) { // pin 9 to 11 are OUTPUT 11=red 10=green 9=blue
   pinMode(i, OUTPUT);
   }
 }
